@@ -6,6 +6,12 @@ import pl.twisz.plants.Plant;
 
 public class Zebra extends Herbivore {
 
+    private final int starvingLimit = 6;
+
+    public int getStarvingLimit() {
+        return starvingLimit;
+    }
+
     @Override
     public void eat(Cell cell) {
         Plant currentPlant = cell.getPlant();

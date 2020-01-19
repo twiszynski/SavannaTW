@@ -4,6 +4,12 @@ import pl.twisz.Cell;
 
 public class Lion extends Predator {
 
+    private final int starvingLimit = 7;
+
+    public int getStarvingLimit() {
+        return starvingLimit;
+    }
+
     @Override
     public void eat(Cell cell) {
         this.setStarvingDays(getStarvingDays() + 1);

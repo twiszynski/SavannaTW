@@ -3,7 +3,7 @@ package pl.twisz;
 public class SavannaSimulator {
 
     //runs simulation with given number of days
-    public void simulateByGivenDays(Savanna savanna, int timeInDays){
+    public void simulateByGivenDays(Savanna savanna, int timeInDays) {
         InfoPrinter ip = new InfoPrinter(savanna);
         ip.printHello();
         ip.printInitialElementsInfo();
@@ -32,7 +32,6 @@ public class SavannaSimulator {
         savanna.showSavannaBoard();
 
         while (savanna.getAnimalsLeft() > 0 && savanna.getDaysPassed() < 999) {
-
             savanna.oneDay();
             savanna.lookForDead();
             savanna.animalMigration();

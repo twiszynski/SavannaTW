@@ -93,14 +93,16 @@ public class InfoPrinter {
 
     public void simulationByDaysCompleted() {
         System.out.println();
-        System.out.println("Your "+savanna.getDaysPassed()+"-days simulation has been completed!");
+        System.out.println("Your "+savanna.getDaysPassed()
+                +"-day simulation has been completed!");
         System.out.println("Go over the results and see how did it look like.");
         System.out.println("See you next time!");
     }
 
     public void simulationWhileAnimalsCompleted() {
         System.out.println();
-        System.out.println("Simulation has been completed! Animals on your savanna survived "+(savanna.getDaysPassed()-1)+" days!");
+        System.out.println("Simulation has been completed! Animals on your savanna survived "
+                +savanna.getDaysPassed()+" days!");
         System.out.println("Go over the results and see how did it look like.");
         System.out.println("See you next time!");
     }

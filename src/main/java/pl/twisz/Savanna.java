@@ -148,7 +148,7 @@ public class Savanna {
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 Cell currentCell = board[r][c];
-                currentCell.getAnimals().removeIf(a -> a.checkStarvingDays() >= 5);
+                currentCell.getAnimals().removeIf(a -> a.getStarvingDays() >= a.getStarvingLimit());
             }
         }
     }

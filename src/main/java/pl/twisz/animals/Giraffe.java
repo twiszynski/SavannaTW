@@ -6,6 +6,12 @@ import pl.twisz.plants.Tree;
 
 public class Giraffe extends Herbivore {
 
+    private final int starvingLimit = 5;
+
+    public int getStarvingLimit() {
+        return starvingLimit;
+    }
+
     @Override
     public void eat(Cell cell) {
         Plant currentPlant = cell.getPlant();
