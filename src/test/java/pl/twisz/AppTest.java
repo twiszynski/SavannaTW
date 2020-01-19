@@ -1,4 +1,4 @@
-package SavannaTW;
+package pl.twisz;
 
 import static org.junit.Assert.assertTrue;
 
